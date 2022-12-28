@@ -4,20 +4,6 @@
 
  LBI Secondary is Japan’s first system that utilizes blockchain technology to buy and sell investment interests in financial products. According to the transaction rules, it is possible to carry out bilateral transactions related to transfer using digital tokens. In order to use the application, the user must create an LBI account using the application. A valid LBI account is needed to view the secondary tokens available with the Levias Secondary application. Secondary tokens are the tokens, which the app users can buy and sell through the application.
 
-## Features of JSTO
-     * LBI Account Operation
-     * Virtual Wall Account Operation
-     * Information List
-     * Pick up Token
-     * Secondary Tokens
-     * Trending Secondary Tokens
-     * TODO List
-     * Status List
-     * Notification List
-     * App Settings
-     * Application for Transfer - Seller/Buyer
-     * Process/Status Details - Seller/Buyer
-
 ## JSTO Requirement
 
 * Java（OpenJDK 15）
@@ -25,7 +11,7 @@
 * MyBatis 
 * Editors (VSCode, Intellij, eclipse, etc)
 * Gradle
-* (recommended) MySQL client tools
+* MySQL client tools
 * Git
 
 ## Setup Configuration (for Intellij)

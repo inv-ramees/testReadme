@@ -85,7 +85,7 @@ For Calling Primary Database Related API's in application-common.properties
 
 Build automation tool used is Gradle.
 
-Run the commands in which gradle file is located
+Run the commands at gradle file
 
 For adding permission
 

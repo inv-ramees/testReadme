@@ -2,16 +2,16 @@
 
 ## JSTO Description
 
- LBI Secondary is Japan’s first system that utilizes blockchain technology to buy and sell investment interests in financial products. According to the transaction rules, it is possible to carry out bilateral transactions related to transfer using digital tokens. In order to use the application, the user must create an LBI account using the application. A valid LBI account is needed to view the secondary tokens available with the Levias Secondary application. Secondary tokens are the tokens, which the app users can buy and sell through the application. Jsto Secondary is a backend spring boot project for Gokurakujoto application.
+  Jsto Secondary is a backend API provider spring boot project for Gokurakujoto application.LBI Secondary is Japan’s first system that utilizes blockchain technology to buy and sell investment interests in financial products.
 
 ## JSTO Requirement
 
 * Java（OpenJDK 15）
+* MySQL(ver)
 * Spring Boot
-* MyBatis 
+* MyBatis
+* Gradle 
 * Editors (VSCode, Intellij, eclipse, etc)
-* Gradle
-* MySQL client tools
 * Git
 
 ## Setup Configuration (for Intellij)
@@ -26,7 +26,7 @@ Switch to the develop branch using the following command.
 
     checkout develop
 
-Open the project with jsto_root folder in the IntelliJ IDEA Editor 
+Open the project with jsto_root folder in the IDEA Editor (IntelliJ)
 
 #### Project Folder Structure
 

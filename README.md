@@ -2,7 +2,7 @@
 
 ## JSTO Description
 
- LBI Secondary is Japan’s first system that utilizes blockchain technology to buy and sell investment interests in financial products. According to the transaction rules, it is possible to carry out bilateral transactions related to transfer using digital tokens. In order to use the application, the user must create an LBI account using the application. A valid LBI account is needed to view the secondary tokens available with the Levias Secondary application. Secondary tokens are the tokens, which the app users can buy and sell through the application.
+ LBI Secondary is Japan’s first system that utilizes blockchain technology to buy and sell investment interests in financial products. According to the transaction rules, it is possible to carry out bilateral transactions related to transfer using digital tokens. In order to use the application, the user must create an LBI account using the application. A valid LBI account is needed to view the secondary tokens available with the Levias Secondary application. Secondary tokens are the tokens, which the app users can buy and sell through the application. Jsto Secondary is a backend spring boot project for Gokurakujoto application.
 
 ## JSTO Requirement
 
@@ -18,11 +18,63 @@
 
 #### Git branch
 
+Clone the repository
+    
+    git clone https://github.com/levias-org/jsto_secondary.git
+    
 Switch to the develop branch using the following command.
 
     checkout develop
 
-Open the project in the IntelliJ IDEA Editor 
+Open the project with jsto_root folder in the IntelliJ IDEA Editor 
+
+#### Project Folder Structure
+
+    jsto_secondary
+       │        
+       └─README.md 
+       │        
+       └─source
+          │     
+          └────── batch        
+          │
+          └──────gt-fw-common       
+          │
+          └──────gt-fw-db   
+          │        
+          └──────gt-fw-logic
+          │ 
+          └──────gt-fw-web
+          │      
+          └──────jsto-business-common
+          │   
+          └──────jsto-db-trade
+          │  
+          └──────jsto-docusign
+          │  
+          └──────jsto-io
+          │   
+          └──────jsto-logic
+          │ 
+          └──────jsto-logic-admin
+          │   
+          └──────jsto-logic-investor
+          │ 
+          └──────jsto-peer
+          │ 
+          └──────jsto-root
+          │            │     
+          │            └──────gradle
+          │            │   
+          │            └──────build.gradle
+          │            │  
+          │            + 
+          │            + 
+          │            +
+          │            └──────settings.gradle
+          │
+          └──────jsto-trade-polling
+                      
 
  #### MySQL Configuration
   
@@ -43,10 +95,6 @@ Credentials to Connect with Secondary Database in application-trade_db.propertie
     spring.trade.password=${env.trade.pass}
 
 Create MySQL structure of jsto_primary and jsto_secondary Database.Add the configuration file inorder to access remote server for database. Need to use the access file details for adding configuration file such as IP, username, password, passphrase, Endpoint, URL, user, password.
-
-  #### Starting Spring Boot
-
-     Open project from the module jsto_root.
     
   #### S3 Amazon
 
@@ -84,6 +132,10 @@ For Calling Primary Database Related API's in application-common.properties
 ## Build procedure 
 
 Build automation tool used is Gradle. Run the commands at gradle file.
+
+Open the project at jsto-root folder where the gradle file is located.
+
+    cd jsto_secondary/source/jsto-root
 
 For adding permission
 
